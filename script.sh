@@ -196,8 +196,6 @@ git commit -m "initial commit"
 git remote add gitlab $(cat authentication.json | jq "{gitlab}" | jq -r ".[]")
 # github
 git remote add github $(cat authentication.json | jq "{github}" | jq -r ".[]")
-# heroku
-heroku git:remote -a $(cat authentication.json | jq "{heroku}" | jq -r ".[]")
 # beanstalk
 git remote add beanstalk $(cat authentication.json | jq "{beanstalk}" | jq -r ".[]")
 # bitbucket
@@ -213,6 +211,5 @@ git checkout master
 ### push to all remotes ###
 git push --all gitlab
 git push --all github
-git push --all heroku
 git push --all beanstalk
 git push --all bitbucket
