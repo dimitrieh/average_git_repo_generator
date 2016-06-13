@@ -209,7 +209,4 @@ done
 git checkout master
 
 ### push to all remotes ###
-git push --all gitlab
-git push --all github
-git push --all beanstalk
-git push --all bitbucket
+git remote | xargs -L1 git push --all
