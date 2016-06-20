@@ -1,6 +1,6 @@
 # Git Repository Generator with mockup data
 
-This is a repository full of spoof data for the following [case study](http://example.com)
+This is a repository full of spoof data for the following [case study](https://medium.com/@dimitrieh/the-gitlab-design-case-study-part-1-1afcf121a98c#.8txzyqwm7)
 
 It calculates data off of the 30 top starred github repositories to get to an average!
 
